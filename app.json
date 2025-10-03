@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Spotify",
+    "slug": "Spotify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Spotify_Primary_Logo_RGB_Green.png",
+    "scheme": "spotify",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Spotify_Primary_Logo_RGB_Green.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/Spotify_Full_Logo_RGB_Green.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/Spotify_Full_Logo_RGB_Green.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
