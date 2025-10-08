@@ -25,7 +25,7 @@
 <img src="https://github.com/na638/spotify/blob/main/reSpotify/Profile.jpg" width="300">
 
 ### Drawer Navigation
-<img src="https://github.com/na638/spotify/blob/main/reSpotify/Drawer.jpg" width="300">
+<img src="https://github.com/na638/spotify/blob/main/reSpotify/DrawerNavigation.jpg" width="300">
 
 ### Your Library Page
 <img src="https://github.com/na638/spotify/blob/main/reSpotify/Home.jpg" width="300">
