@@ -16,7 +16,7 @@
 
 
 ### Sign In Page:
-<img src="https://github.com/Tediisu/Re-Spotify/blob/main/reSpotify/SignIn_Page.png" width="300">
+<img src="https://github.com/na638/spotify/blob/main/reSpotify/SignIn.jpg" width="300">
 
 ### Sign Up Page
 <img src="https://github.com/na638/spotify/blob/main/reSpotify/SignUp.jpg" width="300">
