@@ -22,13 +22,13 @@
 <img src="https://github.com/na638/spotify/blob/main/reSpotify/SignUp.jpg" width="300">
 
 ### User Profile Page
-<img src="https://github.com/Tediisu/Re-Spotify/blob/main/reSpotify/UserProfile_Page.png" width="300">
+<img src="https://github.com/na638/spotify/blob/main/reSpotify/Profile.jpg" width="300">
 
 ### Drawer Navigation
 <img src="https://github.com/Tediisu/Re-Spotify/blob/main/reSpotify/Drawer.png" width="300">
 
 ### Your Library Page
-<img src="https://github.com/Tediisu/Re-Spotify/blob/main/reSpotify/YourLibrary_Page.png" width="300">
+<img src="https://github.com/na638/spotify/blob/main/reSpotify/Home.jpg" width="300">
 
 ### Settings Page
-<img src="https://github.com/Tediisu/Re-Spotify/blob/main/reSpotify/Settings_Page.png" width="300">
+<img src="https://github.com/na638/spotify/blob/main/reSpotify/Settings.jpg" width="300">
