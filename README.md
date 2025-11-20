@@ -32,3 +32,5 @@
 
 ### Settings Page
 <img src="https://github.com/na638/spotify/blob/main/reSpotify/Settings.jpg" width="300">
+
+# spotify
