@@ -25,8 +25,16 @@ function CustomDrawerContent(props) {
         <Text style={styles.viewProfile}>View profile</Text>
       </TouchableOpacity>
 
-      {/* Divider */}
       <View style={styles.divider} />
+
+      {/* ProfileForm */}
+      <TouchableOpacity
+        style={styles.item}
+        onPress={() => navigation.navigate("profileForm")}
+      >
+        <Ionicons name="person-outline" size={22} color="white" />
+        <Text style={styles.itemText}>Profile Form</Text>
+      </TouchableOpacity>
 
       {/* Add Account */}
       <TouchableOpacity
@@ -60,7 +68,6 @@ function CustomDrawerContent(props) {
         style={styles.item}
         onPress={() => navigation.navigate("settings")}
       >
-        {/* ✅ FIXED TO A PROPER COG ICON */}
         <Ionicons name="settings-outline" size={22} color="white" />
         <Text style={styles.itemText}>Settings and privacy</Text>
       </TouchableOpacity>
@@ -77,13 +84,14 @@ export default function DrawerLayout() {
         drawerStyle: { backgroundColor: "#121212" },
       }}
     >
-      {/* Tabs group */}
       <Drawer.Screen
         name="(tabs)"
         options={{ drawerItemStyle: { display: "none" } }}
       />
-
-      {/* Settings page */}
+      <Drawer.Screen
+        name="ProfileForm"
+        options={{ drawerItemStyle: { display: "none" } }}
+      />
       <Drawer.Screen
         name="settings"
         options={{ drawerItemStyle: { display: "none" } }}

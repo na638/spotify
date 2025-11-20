@@ -7,6 +7,7 @@ import Home from "./home";
 import Search from "./search";
 import Library from "./yourLibrary";
 import Create from "./create";
+import Playlist from "./playlist";
 import Profile from "./profile";
 
 const Tab = createBottomTabNavigator();
@@ -26,6 +27,7 @@ export default function TabsLayout() {
           else if (route.name === "search") iconName = "search";
           else if (route.name === "library") iconName = "library";
           else if (route.name === "create") iconName = "add-circle-outline";
+          else if (route.name === "playlist") iconName = "musical-notes-outline";
 
           if (route.name === "library") {
             return <MaterialIcons name="library-music" size={size} color={color} />;
@@ -38,7 +40,8 @@ export default function TabsLayout() {
       <Tab.Screen name="search" component={Search} options={{ title: "Search" }} />
       <Tab.Screen name="library" component={Library} options={{ title: "Library" }} />
       <Tab.Screen name="create" component={Create} options={{ title: "Create" }} />
-      {/* Hidden tab, navigated via Drawer */}
+      <Tab.Screen name="playlist" component={Playlist} options={{ title: "Playlist" }} />
+      {/* Hidden tab navigated via drawer */}
       <Tab.Screen name="profile" component={Profile} options={{ tabBarButton: () => null }} />
     </Tab.Navigator>
   );
