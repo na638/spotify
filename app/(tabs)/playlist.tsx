@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, FlatList, StyleSheet } from "react-native";
-import { useRouter } from "expo-router";
 
 export default function PlaylistScreen() {
   const [song, setSong] = useState("");
   const [playlist, setPlaylist] = useState<string[]>([]);
-
-  const router = useRouter();
 
   const addSong = () => {
     if (song.trim() !== "") {
@@ -50,17 +47,6 @@ export default function PlaylistScreen() {
           </View>
         )}
       />
-
-      {/* Bottom Buttons */}
-      <View style={styles.bottomNav}>
-        <TouchableOpacity onPress={() => router.push("/(tabs)/home")} style={styles.navButton}>
-          <Text style={styles.navText}>Home</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity onPress={() => router.push("/(tabs)/playlist")} style={styles.navButton}>
-          <Text style={styles.navText}>Playlist</Text>
-        </TouchableOpacity>
-      </View>
     </View>
   );
 }
@@ -85,7 +71,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   addButton: {
-    backgroundColor: "#1DB954", // Spotify green
+    backgroundColor: "#1DB954",
     padding: 12,
     borderRadius: 10,
     marginBottom: 20,
@@ -108,19 +94,5 @@ const styles = StyleSheet.create({
   },
   removeButton: {
     color: "#FF5C5C",
-  },
-  bottomNav: {
-    position: "absolute",
-    bottom: 0,
-    width: "100%",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    backgroundColor: "#000",
-    paddingVertical: 15,
-  },
-  navButton: {},
-  navText: {
-    color: "#fff",
-    fontSize: 16,
-  },
+  }
 });
